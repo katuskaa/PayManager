@@ -6,7 +6,7 @@ import android.content.Intent;
 import domacnost.paymanager.R;
 import domacnost.paymanager.base.BaseActivity;
 
-public class ShoppingListActivity extends BaseActivity {
+public class ShoppingListActivity extends BaseActivity implements ShoppingListHandler {
 
     public static void startActivity(Context context) {
         Intent intent = new Intent(context, ShoppingListActivity.class);
