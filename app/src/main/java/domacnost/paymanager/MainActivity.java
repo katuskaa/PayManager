@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-        android.widget.Toast.makeText(this, "ahoj", Toast.LENGTH_SHORT).show();
     }
 
     @Override
