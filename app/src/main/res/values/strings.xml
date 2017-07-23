@@ -1,7 +1,16 @@
 <resources>
+
+    <!--APP-->
     <string name="app_name">PayManager</string>
+
+    <!--MENU-->
+    <string name="payment_list">Payment list</string>
+    <string name="shopping_list">Shopping list</string>
+    <string name="title_activity_base">BaseActivity</string>
+
     <string name="action_settings">Settings</string>
     <string name="name_katka">Katušiak</string>
     <string name="name_peter">Peťušiak</string>
     <string name="select_user">Select User</string>
+
 </resources>
