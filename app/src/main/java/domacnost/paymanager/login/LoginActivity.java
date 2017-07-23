@@ -8,12 +8,6 @@ import domacnost.paymanager.base.BaseActivity;
 
 public class LoginActivity extends BaseActivity {
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_login);
-//    }
-
     public static void startActivity(Context context) {
         Intent intent = new Intent(context, LoginActivity.class);
         context.startActivity(intent);

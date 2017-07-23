@@ -23,7 +23,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         this.enabledMenu = enableMenu();
-
     }
 
     @Override
