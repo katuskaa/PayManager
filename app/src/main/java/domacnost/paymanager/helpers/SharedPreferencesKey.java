@@ -1,6 +1,6 @@
 package domacnost.paymanager.helpers;
 
-public class SharedPreferencesKey {
+class SharedPreferencesKey {
 
-    public final static String USER = "user";
+    final static String USER = "user";
 }
