@@ -17,4 +17,9 @@ public class PaymentListActivity extends BaseActivity {
     protected Integer setActivityLayout() {
         return R.layout.activity_payment_list;
     }
+
+    @Override
+    protected boolean enableMenu() {
+        return true;
+    }
 }

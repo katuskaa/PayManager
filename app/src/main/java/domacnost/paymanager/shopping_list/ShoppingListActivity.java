@@ -18,6 +18,11 @@ public class ShoppingListActivity extends BaseActivity {
         return R.layout.activity_shopping_list;
     }
 
+    @Override
+    protected boolean enableMenu() {
+        return true;
+    }
+
 //    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //        @Override

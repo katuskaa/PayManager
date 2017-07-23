@@ -12,6 +12,8 @@ import domacnost.paymanager.shopping_list.ShoppingListActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
+    private boolean enabledMenu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,12 +21,18 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        this.enabledMenu = enableMenu();
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        if (this.enabledMenu) {
+            getMenuInflater().inflate(R.menu.menu_main, menu);
+            return true;
+        }
+        return false;
     }
 
     @Override
@@ -38,10 +46,12 @@ public abstract class BaseActivity extends AppCompatActivity {
         } else if (id == R.id.action_shopping_list) {
             ShoppingListActivity.startActivity(this);
             return true;
-
         }
+
         return super.onOptionsItemSelected(item);
     }
 
     protected abstract Integer setActivityLayout();
+
+    protected abstract boolean enableMenu();
 }
