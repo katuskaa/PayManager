@@ -1,4 +1,12 @@
 <resources>
+
+    <!--APP-->
     <string name="app_name">PayManager</string>
-    <string name="action_settings">Settings</string>
+
+
+    <!--MENU-->
+    <string name="payment_list">Payment list</string>
+    <string name="shopping_list">Shopping list</string>
+    <string name="title_activity_base">BaseActivity</string>
+
 </resources>
