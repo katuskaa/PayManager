@@ -1,4 +1,4 @@
-package domacnost.paymanager;
+package domacnost.paymanager.payment_list;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,7 +9,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+import domacnost.paymanager.R;
+
+public class PaymentListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

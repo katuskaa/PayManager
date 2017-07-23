@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="domacnost.paymanager.MainActivity">
+    tools:context="domacnost.paymanager.payment_list.PaymentListActivity">
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
