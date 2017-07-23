@@ -12,7 +12,12 @@ import domacnost.paymanager.screens.shopping_list.ShoppingListActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
+    private static BaseActivity baseActivity;
     private boolean enabledMenu;
+
+    public static BaseActivity getInstance() {
+        return baseActivity;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +26,8 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        baseActivity = this;
 
         this.enabledMenu = enableMenu();
         this.onActivityLoadingFinished();

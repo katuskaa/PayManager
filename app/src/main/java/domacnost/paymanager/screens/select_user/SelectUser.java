@@ -5,6 +5,7 @@ import android.widget.Button;
 
 import domacnost.paymanager.R;
 import domacnost.paymanager.base.BaseActivity;
+import domacnost.paymanager.communication.Database;
 import domacnost.paymanager.data.User;
 import domacnost.paymanager.helpers.SharedPreferencesHelper;
 import domacnost.paymanager.screens.payment_list.PaymentListActivity;
@@ -43,7 +44,8 @@ public class SelectUser extends BaseActivity implements SelectUserHandler {
 
     @Override
     public void onSelectedUser(String user) {
-        SharedPreferencesHelper.saveUser(this, user);
+        Database.goOffline();
+        SharedPreferencesHelper.saveUser(user);
         PaymentListActivity.startActivity(this);
         this.finish();
     }
