@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">PayManager</string>
     <string name="action_settings">Settings</string>
+    <string name="name_katka">Katušiak</string>
+    <string name="name_peter">Peťušiak</string>
 </resources>
