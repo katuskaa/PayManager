@@ -1,11 +1,13 @@
-package domacnost.paymanager.select_user;
+package domacnost.paymanager.screens.select_user;
 
 import android.view.View;
 import android.widget.Button;
 
 import domacnost.paymanager.R;
 import domacnost.paymanager.base.BaseActivity;
-import domacnost.paymanager.payment_list.PaymentListActivity;
+import domacnost.paymanager.data.User;
+import domacnost.paymanager.helpers.SharedPreferencesHelper;
+import domacnost.paymanager.screens.payment_list.PaymentListActivity;
 
 public class SelectUser extends BaseActivity implements SelectUserHandler {
 
@@ -27,20 +29,21 @@ public class SelectUser extends BaseActivity implements SelectUserHandler {
         buttonKatusiak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onSelected();
+                onSelectedUser(User.USER_KATUSIAK);
             }
         });
 
         buttonPetusiak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onSelected();
+                onSelectedUser(User.USER_PETUSIAK);
             }
         });
     }
 
     @Override
-    public void onSelected() {
+    public void onSelectedUser(String user) {
+        SharedPreferencesHelper.saveUser(this, user);
         PaymentListActivity.startActivity(this);
         this.finish();
     }

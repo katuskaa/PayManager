@@ -1,4 +1,4 @@
-package domacnost.paymanager.payment_list;
+package domacnost.paymanager.screens.payment_list;
 
 import android.content.Context;
 import android.content.Intent;
