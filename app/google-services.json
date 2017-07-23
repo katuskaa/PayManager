@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "718608334382",
+    "firebase_url": "https://paymanager-49b7e.firebaseio.com",
+    "project_id": "paymanager-49b7e",
+    "storage_bucket": "paymanager-49b7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718608334382:android:86e970cca48433ca",
+        "android_client_info": {
+          "package_name": "domacnost.paymanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718608334382-teg0b3ushjhtumaimd159k5lussmofig.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "domacnost.paymanager",
+            "certificate_hash": "e145f5acd0d9a946f297446ecb8e051360eede01"
+          }
+        },
+        {
+          "client_id": "718608334382-rpdmfcev11l9adeheg3vib2rrd8ma369.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR1WEnXHR9iQz13omicgduiJBgksd4_uI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718608334382-rpdmfcev11l9adeheg3vib2rrd8ma369.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
