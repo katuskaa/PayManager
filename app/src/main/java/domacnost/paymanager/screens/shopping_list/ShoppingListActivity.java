@@ -1,4 +1,4 @@
-package domacnost.paymanager.shopping_list;
+package domacnost.paymanager.screens.shopping_list;
 
 import android.content.Context;
 import android.content.Intent;

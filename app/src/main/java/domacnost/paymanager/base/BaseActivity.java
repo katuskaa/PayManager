@@ -7,8 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import domacnost.paymanager.R;
-import domacnost.paymanager.payment_list.PaymentListActivity;
-import domacnost.paymanager.shopping_list.ShoppingListActivity;
+import domacnost.paymanager.screens.payment_list.PaymentListActivity;
+import domacnost.paymanager.screens.shopping_list.ShoppingListActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
