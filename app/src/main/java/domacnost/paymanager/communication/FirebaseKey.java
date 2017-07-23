@@ -1,7 +1,7 @@
 package domacnost.paymanager.communication;
 
-public class FirebaseKey {
+class FirebaseKey {
 
-    public final static String SHOPPINGS = "shoppings";
+    final static String SHOPPINGS = "shoppings";
 
 }
