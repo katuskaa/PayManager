@@ -22,4 +22,9 @@ public class PaymentListActivity extends BaseActivity {
     protected boolean enableMenu() {
         return true;
     }
+
+    @Override
+    protected void onActivityLoadingFinished() {
+
+    }
 }

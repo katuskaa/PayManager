@@ -23,6 +23,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         this.enabledMenu = enableMenu();
+        this.onActivityLoadingFinished();
     }
 
     @Override
@@ -40,10 +41,12 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         if (id == R.id.action_payment_list) {
             PaymentListActivity.startActivity(this);
+            this.finish();
             return true;
 
         } else if (id == R.id.action_shopping_list) {
             ShoppingListActivity.startActivity(this);
+            this.finish();
             return true;
         }
 
@@ -53,4 +56,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected abstract Integer setActivityLayout();
 
     protected abstract boolean enableMenu();
+
+    protected abstract void onActivityLoadingFinished();
 }

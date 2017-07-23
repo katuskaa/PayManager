@@ -23,6 +23,11 @@ public class ShoppingListActivity extends BaseActivity {
         return true;
     }
 
+    @Override
+    protected void onActivityLoadingFinished() {
+
+    }
+
 //    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //        @Override
